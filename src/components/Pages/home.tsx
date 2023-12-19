@@ -1,9 +1,10 @@
-import Header from '../Header'
 import RestaurantList from '../RestaurantList'
 import Restaurant from '../models/restaurant'
 
 import Sushi from '../../assets/images/sushi.png'
 import Italiana from '../../assets/images/italiana.png'
+import Header from '../Header'
+import Footer from '../Fotter'
 
 const listaRestaurantes: Restaurant[] = [
   {
@@ -28,7 +29,9 @@ const listaRestaurantes: Restaurant[] = [
 
 const Home = () => (
   <>
+    <Header />
     <RestaurantList restaurant={listaRestaurantes} />
+    <Footer />
   </>
 )
 

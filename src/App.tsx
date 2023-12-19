@@ -3,13 +3,13 @@ import sushi from './assets/images/sushi.png'
 
 import { GlobalCss } from './styles'
 
-import Header from './components/Header'
 import Home from './components/Pages/home'
+import Pratos from './components/Pages/Pratos'
 
 const Rotas = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    {/* <Route path="/categories" element={<Pratos />} /> */}
+    <Route path="/pratos" element={<Pratos />} />
   </Routes>
 )
 
@@ -17,11 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalCss />
-      <Header />
-      <div className="container">
-        <Home />
-      </div>
-      {/* <Footer /> */}
+      <Rotas />
     </BrowserRouter>
   )
 }
