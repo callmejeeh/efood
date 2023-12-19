@@ -1,6 +1,6 @@
-import vector from '../assets/images/fundo.png'
-import logo from '../assets/images/logo.svg'
-import { Container } from '../styles'
+import vector from '../../assets/images/fundo.png'
+import logo from '../../assets/images/logo.png'
+import { Container } from '../../styles'
 import { Logo, Titulo } from './style'
 import { Imagem } from './style'
 

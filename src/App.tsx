@@ -1,23 +1,26 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import sushi from './assets/images/sushi.png'
 
 import { GlobalCss } from './styles'
 
-import Header from './Header'
+import Header from './components/Header'
+import Home from './components/Pages/home'
 
-// const Rotas = () => (
-//   <Routes>
-//     <Route path="/" element={<Home />} />
-//     <Route path="/categories" element={<Categories />} />
-//   </Routes>
-// )
+const Rotas = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    {/* <Route path="/categories" element={<Pratos />} /> */}
+  </Routes>
+)
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalCss />
       <Header />
-      <div className="container"></div>
-      {/* <Rotas /> */}
+      <div className="container">
+        <Home />
+      </div>
       {/* <Footer /> */}
     </BrowserRouter>
   )

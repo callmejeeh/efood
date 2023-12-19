@@ -20,6 +20,6 @@ export const Titulo = styled.h2`
 `
 export const Logo = styled.a`
   margin: 32px 450px;
-  position: fixed;
+  position: absolute;
   top: 0;
 `
