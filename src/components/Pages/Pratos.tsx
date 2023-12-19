@@ -1,9 +1,9 @@
 import PlateList from '../BodyPratos/listapratos'
 import Footer from '../Fotter'
-import Header from '../Header'
 import Pratos from '../models/pratos'
 
 import pizza from '../../assets/images/Pizza.png'
+import HeaderPratos from '../HeaderPratos'
 
 const DishList: Pratos[] = [
   {
@@ -31,7 +31,7 @@ const DishList: Pratos[] = [
 
 const Home = () => (
   <>
-    <Header />
+    <HeaderPratos />
     <PlateList plate={DishList} />
     <Footer />
   </>
