@@ -7,7 +7,7 @@ export const CardRest = styled.div`
   position: relative;
   max-width: 470px;
   margin-top: 80px;
-  margin-left: 80px;
+  margin-left: 240px;
 
   img {
     max-width: 450px;

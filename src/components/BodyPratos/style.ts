@@ -6,8 +6,7 @@ export const CardPratos = styled.div`
   padding: 8px;
   position: relative;
   max-width: 350px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 32px;
 
   img {
     width: 330px;
@@ -50,6 +49,7 @@ export const BotaoPrato = styled.button`
 export const ListPratos = styled.ul`
   display: grid;
   margin-top: 40px;
+  margin-bottom: 120px;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
   margin-left: 4px;
