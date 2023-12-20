@@ -1,23 +1,16 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import sushi from './assets/images/sushi.png'
+import { BrowserRouter } from 'react-router-dom'
 
-import { GlobalCss } from './styles'
+import { GlobalCss } from './styles/styles'
 
-import Home from './components/Pages/home'
-import Pratos from './components/Pages/Pratos'
-
-const Rotas = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/pratos" element={<Pratos />} />
-  </Routes>
-)
+import Rotas from './routes'
+import Footer from './Containers/Footer'
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalCss />
       <Rotas />
+      <Footer />
     </BrowserRouter>
   )
 }
