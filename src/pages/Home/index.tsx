@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useGetRestsQuery } from '../../services/api'
 
 import ListRestarant from '../../Containers/ListRestaurant'
 import Hero from '../../Containers/Hero'
