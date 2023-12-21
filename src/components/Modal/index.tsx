@@ -4,18 +4,25 @@ import close from '../../assets/img/gadgets/close.png'
 
 import Button from '../../components/Button'
 import TypeMenu from '../../types/menu'
+import { useDispatch } from 'react-redux'
+import { add } from '../../store/reducers/cart'
 
 type Props = {
   isOpen: boolean
   closeModal: () => void
-  item?: TypeMenu
+  item: TypeMenu
 }
 const Modal = ({ isOpen, closeModal, item }: Props) => {
+  const dispatch = useDispatch()
   const formataPreco = (preco = 0) => {
     return new Intl.NumberFormat('pt-BR', {
       style: 'currency',
       currency: 'BRL'
     }).format(preco)
+  }
+
+  const addToCart = () => {
+    dispatch(add(item))
   }
 
   return (
@@ -38,7 +45,7 @@ const Modal = ({ isOpen, closeModal, item }: Props) => {
             <Button
               title="Adicione agora este produto ao carrinho"
               type="button"
-              onClick={() => console.log}
+              onClick={addToCart}
             >
               Adicionar ao carrinho - {formataPreco(item?.preco)}
             </Button>

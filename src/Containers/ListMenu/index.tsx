@@ -39,10 +39,10 @@ const ListMenu = ({ product }: Props) => {
           ))}
         </S.ListMenu>
         <Modal
+          item={productSelected}
           isOpen={modalIsOpen}
           closeModal={() => setModalIsOpen(false)}
-          item={productSelected}
-        />
+        ></Modal>
       </div>
     </S.ContainerListMenu>
   )
